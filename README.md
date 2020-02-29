@@ -21,6 +21,9 @@
 - Student Model: ResNet18 (result_acc=93.71%)
 - Training time: each_epoch: 48s, total_time: 49:58
 
+- Normal Training: ResNet18 (result_acc=93.05%)
+- Training time: each_epoch: 25s, total_time: 26:34
+
 
 
 
