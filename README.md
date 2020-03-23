@@ -6,7 +6,7 @@
 
 - Dataset: Cifar10
 
-- Teacher Model: ResNet18 (acc=94.81%)
+- Teacher Model: ResNet18 (acc=94.81%) LeNet5 (acc=61.91%)
 
 - ```python
   epochs = trange(60)
@@ -18,12 +18,16 @@
 
 ## Results
 
-- Student Model: ResNet18 (result_acc=93.71%)
-- Training time: each_epoch: 48s, total_time: 49:58
+- Training time each epoch
 
-- Normal Training: ResNet18 (result_acc=93.05%)
-- Training time: each_epoch: 25s, total_time: 26:34
+  | Student\|Teacher | ResNet18  | LeNet5    | None      |
+  | ---------------- | --------- | --------- | --------- |
+  | ResNet18         | 50s/epoch | 26s/epoch | 25s/epoch |
+  | LeNet5           | 25s/epoch | 4s/epoch  | 4s/epoch  |
 
+- Total time and accuracy
 
-
-
+  | Student\|Teacher | ResNet18       | LeNet5         | None           |
+  | ---------------- | -------------- | -------------- | -------------- |
+  | ResNet18         | 52:47 (94.12%) | 27:34 (78.24%) | 27:11 (89.27%) |
+  | LeNet5           | 26:36 (62.63%) | 05:30 (59.95%) | 05:25 (57.83%) |
