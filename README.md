@@ -1,3 +1,5 @@
+
+
 # FPGA-Federated-Learning
 
 ## Knowedge Distillation baseline settings:
@@ -31,3 +33,13 @@
   | ---------------- | -------------- | -------------- | -------------- |
   | ResNet18         | 52:47 (94.12%) | 27:34 (78.24%) | 27:11 (89.27%) |
   | LeNet5           | 26:36 (62.63%) | 05:30 (59.95%) | 05:25 (57.83%) |
+
+- Memory-Usage (11019MiB)
+
+  | Student\|Teacher | ResNet18 | LeNet5  | None    |
+  | ---------------- | -------- | ------- | ------- |
+  | ResNet18         | 3475MiB  | 2653MiB | 2651MiB |
+  | LeNet5           | 2649MiB  | 925MiB  | 901MiB  |
+
+- Single forward (ResNet18) during an epoch: 5s/epoch 2607MiB
+- Single forward (ResNet18) during an epoch with another model (ResNet18) training: 12s 5246MiB
