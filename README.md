@@ -35,6 +35,11 @@
   | ---------------- | --------- | --------- | --------- |
   | ResNet18         | 50s/epoch | 26s/epoch | 25s/epoch |
   | LeNet5           | 25s/epoch | 4s/epoch  | 4s/epoch  |
+
+- Single forward (ResNet18) during an epoch: 5s/epoch 2607MiB
+
+- Single forward (ResNet18) during an epoch with another model (ResNet18) training: 12s 5246MiB
+
 - Memory-Usage (11019MiB)
 
   | Student\|Teacher | ResNet18 | LeNet5  | None    |
@@ -46,11 +51,7 @@
 
   | Local\|Meme | ResNet18  | LeNet5    |
   | ----------- | --------- | --------- |
-  | ResNet18    | 48s/epoch | 25s/epoch |
+  | ResNet18    | 50s/epoch | 25s/epoch |
   | LeNet5      | 25s/epoch | 4s/epoch  |
-
-- Single forward (ResNet18) during an epoch: 5s/epoch 2607MiB
-
-- Single forward (ResNet18) during an epoch with another model (ResNet18) training: 12s 5246MiB
 
 - Mutual: 2 forward 2 backward (ResNet18) during an epoch: 48s/epoch
