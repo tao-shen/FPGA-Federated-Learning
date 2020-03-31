@@ -22,13 +22,6 @@
 
 ## Results
 
-- Training time each epoch
-
-  | Student\|Teacher | ResNet18  | LeNet5    | None      |
-  | ---------------- | --------- | --------- | --------- |
-  | ResNet18         | 50s/epoch | 26s/epoch | 25s/epoch |
-  | LeNet5           | 25s/epoch | 4s/epoch  | 4s/epoch  |
-
 - Total time and accuracy
 
   | Student\|Teacher | ResNet18       | LeNet5         | None           |
@@ -36,6 +29,12 @@
   | ResNet18         | 52:47 (94.12%) | 27:34 (78.24%) | 27:11 (89.27%) |
   | LeNet5           | 26:36 (62.63%) | 05:30 (59.95%) | 05:25 (57.83%) |
 
+- Training time each epoch
+
+  | Student\|Teacher | ResNet18  | LeNet5    | None      |
+  | ---------------- | --------- | --------- | --------- |
+  | ResNet18         | 50s/epoch | 26s/epoch | 25s/epoch |
+  | LeNet5           | 25s/epoch | 4s/epoch  | 4s/epoch  |
 - Memory-Usage (11019MiB)
 
   | Student\|Teacher | ResNet18 | LeNet5  | None    |
