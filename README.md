@@ -43,3 +43,4 @@
 
 - Single forward (ResNet18) during an epoch: 5s/epoch 2607MiB
 - Single forward (ResNet18) during an epoch with another model (ResNet18) training: 12s 5246MiB
+- Mutual: 2 forward 2 backward (ResNet18) during an epoch: 48s/epoch
