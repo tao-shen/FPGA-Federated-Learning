@@ -41,6 +41,13 @@
   | ResNet18         | 3475MiB  | 2653MiB | 2651MiB |
   | LeNet5           | 2649MiB  | 925MiB  | 901MiB  |
 
+- Training time each epoch (mutual)
+
+  | Local|Meme       | ResNet18  | LeNet5    |
+  | ---------------- | --------- | --------- |
+  | ResNet18         | 48s/epoch | 25s/epoch |
+  | LeNet5           | 25s/epoch | 4s/epoch  |
+
 - Single forward (ResNet18) during an epoch: 5s/epoch 2607MiB
 - Single forward (ResNet18) during an epoch with another model (ResNet18) training: 12s 5246MiB
 - Mutual: 2 forward 2 backward (ResNet18) during an epoch: 48s/epoch
