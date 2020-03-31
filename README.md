@@ -54,4 +54,4 @@
   | ResNet18    | 50s/epoch | 25s/epoch |
   | LeNet5      | 25s/epoch | 4s/epoch  |
 
-- Mutual: 2 forward 2 backward (ResNet18) during an epoch: 48s/epoch
+- Mutual: 2 forward 2 backward (ResNet18) during an epoch: 50s/epoch
